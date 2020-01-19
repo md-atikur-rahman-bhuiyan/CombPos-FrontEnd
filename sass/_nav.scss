@@ -1,0 +1,110 @@
+
+button{
+  &.menu-handler{
+    background: none;
+    font-size: 30px;
+    border:none;
+    display: none;
+    &:focus{
+      border:none;
+      outline: none;
+    }
+  }
+}
+
+.main-menu{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ul{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+    li{
+      display: inline-block;
+      @extend .transition;
+      a{
+        font-size: 20px;
+        line-height: 30px;
+        color: #707070;
+        padding: 0 20px;
+        text-transform: uppercase;
+        &:hover{
+          text-decoration: none;
+          color: $blue-color;
+        }
+
+        @include media-breakpoint-down(lg) {
+          font-size: 18px;
+          padding: 0 10px;
+        }
+      }
+
+
+      ul{
+        background: $blue-color;
+        display: block;
+        position: absolute;
+        top: 70px;
+        padding: 20px;
+        visibility: hidden;
+        @extend .transition;
+        li{
+          display: block;
+          a{
+            color: #f7f7f7;
+            &:hover{
+              color: #f7f7f7;
+            }
+          }
+        }
+      }
+
+      &:hover{
+        ul{
+          top:45px;
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+
+  &.sign-in{
+    justify-content: flex-end;
+    ul{
+      li{
+        display: inline-block;
+        padding: 10px;
+        margin: 0 10px;
+        //@extend .fadeIn;
+
+        &:last-child{
+          margin-right: 0;
+        }
+
+        &.m-active{
+          @extend .button;
+
+          a{
+            color: #f7f7f7;
+
+          }
+        }
+
+        &:hover{
+          @extend .button;
+
+          a{
+            color: #f7f7f7;
+          }
+        }
+      }
+    }
+  }
+}
