@@ -89,17 +89,31 @@ button{
         }
 
         &.m-active{
-          @extend .button;
+          background: $blue-color;
+          color: $white-color;
+          padding: 10px;
+          border-radius: 10px;
+          -webkit-transition: all .5s ease;
+          -moz-transition: all .5s ease;
+          -ms-transition: all .5s ease;
+          -o-transition: all .5s ease;
+          transition: all .5s ease;
 
           a{
             color: #f7f7f7;
-
           }
         }
 
         &:hover{
-          @extend .button;
-
+          background: $blue-color;
+          color: $white-color;
+          padding: 10px;
+          border-radius: 10px;
+          -webkit-transition: all .5s ease;
+          -moz-transition: all .5s ease;
+          -ms-transition: all .5s ease;
+          -o-transition: all .5s ease;
+          transition: all .5s ease;
           a{
             color: #f7f7f7;
           }
