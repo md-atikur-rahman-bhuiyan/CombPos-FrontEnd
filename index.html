@@ -12,31 +12,65 @@
 <div id="header-panel" class="header-panel"><!--Start Header-->
   <div class="container-fluid">
       <div class="row">
-          <div class="col-md-2 col-md-2 col-xs-12">
+          <div class="col-md-2 col-xs-6 mobile-header">
               <a href="#" class="logo">
                   <img src="images/logo.svg" alt="combo POS">
               </a>
+              <button class="navbar-toggler menu-handler d-block d-sm-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+              </button>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 text-center">
-              <button id="menu-handler" class="menu-handler"><i class="fa fa-bars"></i></button>
-             <nav class="main-menu">
-                 <ul class="menu-inner">
-                     <li>
-                         <a href="#">FEATURES</a>
-                         <ul class="sub-menu">
-                             <li><a href="#">FEATURES</a></li>
-                             <li><a href="#">DEMO</a></li>
-                             <li><a href="#">PRICING</a></li>
-                             <li><a href="#">HELP & RESOURCES</a></li>
-                         </ul>
-                     </li>
-                     <li><a href="#">DEMO</a></li>
-                     <li><a href="#">PRICING</a></li>
-                     <li><a href="#">HELP & RESOURCES</a></li>
-                 </ul>
-             </nav>
+          <div class="col-lg-6 col-md-6 col-xs-6 text-center">
+              <nav class="navbar navbar-expand-md main-menu">
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                          <li class="nav-item active">
+                              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  FEATURES
+                              </a>
+                              <ul class="dropdown-menu">
+                                  <li><a href="#">FEATURES</a></li>
+                                  <li><a href="#">DEMO</a></li>
+                                  <li><a href="#">PRICING</a></li>
+                                  <li><a href="#">HELP & RESOURCES</a></li>
+                              </ul>
+                          </li>
+                          <li><a href="#">DEMO</a></li>
+                          <li><a href="#">PRICING</a></li>
+                          <li><a href="#">HELP & RESOURCES</a></li>
+                      </ul>
+
+                      <nav class="sign-in main-menu d-block d-sm-none">
+                          <ul>
+                              <li><a href="#">SIGN IN</a></li>
+                              <li class="m-active"><a href="#">SIGNUP</a></li>
+                          </ul>
+                      </nav>
+                  </div>
+              </nav>
+<!--             <nav class="main-menu remove">-->
+<!--                 <ul class="menu-inner">-->
+<!--                     <li>-->
+<!--                         <a href="#">FEATURES</a>-->
+<!--                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+<!--                             <li><a href="#">FEATURES</a></li>-->
+<!--                             <li><a href="#">DEMO</a></li>-->
+<!--                             <li><a href="#">PRICING</a></li>-->
+<!--                             <li><a href="#">HELP & RESOURCES</a></li>-->
+<!--                         </ul>-->
+<!--                     </li>-->
+<!--                     <li><a href="#">DEMO</a></li>-->
+<!--                     <li><a href="#">PRICING</a></li>-->
+<!--                     <li><a href="#">HELP & RESOURCES</a></li>-->
+<!--                 </ul>-->
+<!--             </nav>-->
           </div>
-          <div class="col-md-4 col-md-3 col-sm-4 col-xs-12">
+          <div class="col-md-4 col-md-3 col-sm-4 col-xs-12 d-none d-sm-block">
               <nav class="sign-in main-menu">
                   <ul>
                       <li><a href="#">SIGN IN</a></li>
@@ -275,6 +309,112 @@
 
     </div>
 </div><!-- End Features Panel-->
+
+<div id="footer-panel" class="footer-panel"><!--Start Footer Panel-->
+    <section class="footer-sign-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 content-center text-left">
+                    <h2>Sign up for web hosting today!</h2>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div class="row">
+                        <div class="col-6 text-center content-center">
+                            <p>Starting at only</p>
+                            <h2 class="font-weight-bold">$50/Month</h2>
+                        </div>
+                        <div class="col-6 content-center">
+                            <button>Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-widget">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="footer-menu">
+                        <h4>COMPANY</h4>
+                        <ul>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Media</a></li>
+                            <li><a href="">Brand Guidelines</a></li>
+                            <li><a href="">Security</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="footer-menu">
+                        <h4>COMPANY</h4>
+                        <ul>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Media</a></li>
+                            <li><a href="">Brand Guidelines</a></li>
+                            <li><a href="">Security</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="footer-menu">
+                        <h4>COMPANY</h4>
+                        <ul>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Media</a></li>
+                            <li><a href="">Brand Guidelines</a></li>
+                            <li><a href="">Security</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="footer-menu">
+                        <h4>COMPANY</h4>
+                        <ul>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Media</a></li>
+                            <li><a href="">Brand Guidelines</a></li>
+                            <li><a href="">Security</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <div class="copyright-menu">
+                        <ul>
+                            <li><a href="">Global Directory</a></li>
+                            <li><a href="">Sitemap</a></li>
+                            <li><a href="">Terms of Services</a></li>
+                            <li><a href="">Privacy</a></li>
+                        </ul>
+                    </div>
+                    <p class="copyright-text">Copyright 2020 ComboPOS All Rights Reserved.</p>
+                </div>
+                <div class="col-6 content-center">
+                    <div class="footer-social">
+                        <ul>
+                            <li><a href=""><i class="fa fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div><!--End Footer Panel-->
 
 
 

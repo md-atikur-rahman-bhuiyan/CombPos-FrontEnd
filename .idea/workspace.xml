@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be15292f-1035-4daf-b3e7-ce33c029f25a" name="Default Changelist" comment="" />
+    <list default="true" id="be15292f-1035-4daf-b3e7-ce33c029f25a" name="Default Changelist" comment="features panels and hero animation">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XD/POS Elements/Untitled-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XD/POS Elements/Untitled-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XD/POS Elements/Untitled-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XD/POS Elements/Untitled-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XD/POS Elements/Untitled-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sass/_mobile.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/fontawesome.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/fontawesome.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bootstrap/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bootstrap/scss/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/_main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/_nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_nav.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/app.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,10 +31,15 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="69f1e540-084a-42c4-8c29-998257024d5b" />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="ProjectId" id="1WbPuVSZdKSgXua0IGZZPO6lx4O" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -24,11 +48,26 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ComboSoft\Desktop\comboPos\js" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/comboPos/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -54,26 +93,97 @@
       <updated>1579415543957</updated>
       <workItem from="1579415545230" duration="7623000" />
       <workItem from="1579428537343" duration="263000" />
-      <workItem from="1579428818946" duration="11110000" />
+      <workItem from="1579428818946" duration="11709000" />
+      <workItem from="1579499227329" duration="23263000" />
+      <workItem from="1579587372049" duration="18351000" />
+      <workItem from="1579672850304" duration="21308000" />
     </task>
+    <task id="LOCAL-00001" summary="features panels and hero animation">
+      <created>1579611816595</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579611816595</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="features panels and hero animation" />
+    <option name="LAST_COMMIT_MESSAGE" value="features panels and hero animation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="731" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579425379490">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="731" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579425379490" />
+    <state x="585" y="115" key="CommitChangelistDialog2" timestamp="1579611815592">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1579611815592" />
     <state x="794" y="437" width="356" height="166" key="Github.CreateGistDialog" timestamp="1579441720792">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="437" width="356" height="166" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579441720792" />
+    <state width="1877" height="239" key="GridCell.Tab.0.bottom" timestamp="1579685823873">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="239" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579685823873" />
+    <state width="1877" height="239" key="GridCell.Tab.0.center" timestamp="1579685823873">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="239" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579685823873" />
+    <state width="1877" height="239" key="GridCell.Tab.0.left" timestamp="1579685823872">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="239" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579685823872" />
+    <state width="1877" height="239" key="GridCell.Tab.0.right" timestamp="1579685823873">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="239" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579685823873" />
+    <state width="1877" height="239" key="GridCell.Tab.1.bottom" timestamp="1579685823873">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="239" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579685823873" />
+    <state width="1877" height="239" key="GridCell.Tab.1.center" timestamp="1579685823873">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="239" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579685823873" />
+    <state width="1877" height="239" key="GridCell.Tab.1.left" timestamp="1579685823873">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="239" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579685823873" />
+    <state width="1877" height="239" key="GridCell.Tab.1.right" timestamp="1579685823873">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="239" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579685823873" />
+    <state width="1877" height="239" key="GridCell.Tab.2.bottom" timestamp="1579685823873">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="239" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579685823873" />
+    <state width="1877" height="239" key="GridCell.Tab.2.center" timestamp="1579685823873">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="239" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579685823873" />
+    <state width="1877" height="239" key="GridCell.Tab.2.left" timestamp="1579685823873">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="239" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579685823873" />
+    <state width="1877" height="239" key="GridCell.Tab.2.right" timestamp="1579685823873">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="239" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579685823873" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1579428793624">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579428793624" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1579611831711">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1579611831711" />
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1579428820579">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

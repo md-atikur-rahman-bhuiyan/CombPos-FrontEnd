@@ -4,7 +4,7 @@ button{
     background: none;
     font-size: 30px;
     border:none;
-    display: none;
+    //display: none;
     &:focus{
       border:none;
       outline: none;
@@ -12,11 +12,22 @@ button{
   }
 }
 
+.bar{
+  display: block;
+  border: 3px solid #000000;
+  margin-bottom: 4px;
+  width:45px;
+
+}
+
+
+
 .main-menu{
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+
   ul{
     list-style: none;
     text-align: center;
@@ -25,6 +36,7 @@ button{
     justify-items: center;
     margin: 0;
     padding: 0;
+
     li{
       display: inline-block;
       @extend .transition;
@@ -48,12 +60,12 @@ button{
 
       ul{
         background: $blue-color;
-        display: block;
-        position: absolute;
-        top: 70px;
+        display: none;
+        //position: absolute;
+        //top: 70px;
         padding: 20px;
-        visibility: hidden;
-        @extend .transition;
+        //visibility: hidden;
+        //@extend .transition;
         li{
           display: block;
           a{
@@ -66,13 +78,27 @@ button{
       }
 
       &:hover{
-        ul{
-          top:45px;
-          opacity: 1;
-          visibility: visible;
-        }
+        //ul{
+        //  top:45px;
+        //  opacity: 1;
+        //  visibility: visible;
+        //}
       }
     }
+
+    //@media (max-width: 768px) {
+    //  display: block;
+    //
+    //  li{
+    //    display: block;
+    //
+    //    ul{
+    //      position: static;
+    //      top: 0;
+    //      visibility: hidden;
+    //    }
+    //  }
+    //}
   }
 
   &.sign-in{

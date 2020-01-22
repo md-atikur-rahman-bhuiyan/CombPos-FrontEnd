@@ -5,7 +5,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-@import url(css/animate.css);
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -7182,6 +7181,85 @@ a.text-dark:hover, a.text-dark:focus {
   position: absolute;
   z-index: 100;
   width: 100%; }
+  @media (max-width: 768px) {
+    .header-panel {
+      background: #ffffff;
+      position: fixed;
+      z-index: 999; }
+      .header-panel .mobile-header {
+        position: relative; }
+        .header-panel .mobile-header .logo {
+          display: inline-block;
+          max-width: 50%; }
+        .header-panel .mobile-header button {
+          position: absolute;
+          right: 0;
+          top: 0; } }
+
+.footer-panel section.footer-sign-up {
+  background: #086BEF;
+  padding: 22px 0; }
+  .footer-panel section.footer-sign-up h2 {
+    color: #ffffff;
+    font-family: 'montserratregular';
+    line-height: 35px; }
+  .footer-panel section.footer-sign-up button {
+    background: #ffffff;
+    color: #000000;
+    font-size: 22px;
+    line-height: 27px;
+    border-radius: 10px;
+    padding: 18px 60px;
+    box-shadow: none;
+    border: 1px solid #707070; }
+
+.footer-panel section.footer-widget {
+  background: #579CF9 url("../images/footer-bg-icon.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding: 80px 0; }
+  .footer-panel section.footer-widget .footer-menu h4 {
+    font-size: 22px;
+    color: #ffffff;
+    font-family: 'montserratregular';
+    margin-bottom: 22px; }
+
+.footer-panel section.footer-copyright {
+  background: #086BEF;
+  padding: 28px 0; }
+  .footer-panel section.footer-copyright ul li {
+    display: inline-block;
+    padding-right: 14px;
+    margin-right: 14px;
+    border-right: 1px solid #ffffff; }
+    .footer-panel section.footer-copyright ul li:last-child {
+      border-right: none;
+      margin-right: 0;
+      padding-right: 0; }
+  .footer-panel section.footer-copyright .footer-social {
+    text-align: right; }
+    .footer-panel section.footer-copyright .footer-social ul {
+      margin-bottom: 0; }
+      .footer-panel section.footer-copyright .footer-social ul li {
+        border: none; }
+        .footer-panel section.footer-copyright .footer-social ul li a {
+          font-size: 28px; }
+        .footer-panel section.footer-copyright .footer-social ul li:last-child {
+          margin-right: 0;
+          padding-right: 0; }
+
+.footer-panel section ul {
+  list-style: none;
+  padding: 0; }
+  .footer-panel section ul li {
+    display: block; }
+    .footer-panel section ul li a {
+      color: #ffffff;
+      line-height: 24px; }
+
+.footer-panel section p {
+  color: #ffffff;
+  margin-bottom: 5px; }
 
 body {
   font-family: 'montserratregular';
@@ -7190,9 +7268,17 @@ body {
   color: #666666; }
   body img {
     max-width: 100%; }
+  body .remove {
+    opacity: 0; }
+  body .active {
+    opacity: 1; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
     font-family: 'GalanoGrotesqueAltBold';
     color: #579CF9; }
+  body .content-center {
+    display: flex;
+    flex-direction: column;
+    align-self: center; }
   body .button {
     background: #579CF9;
     color: #ffffff;
@@ -7210,7 +7296,7 @@ body {
       color: #ffffff; }
   body a:hover {
     text-decoration: none; }
-  body .transition, body .main-menu ul li, .main-menu ul body li, body .main-menu ul li ul, .main-menu ul li body ul {
+  body .transition, body .main-menu ul li, .main-menu ul body li {
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
     -ms-transition: all .5s ease;
@@ -7232,11 +7318,16 @@ body {
 button.menu-handler {
   background: none;
   font-size: 30px;
-  border: none;
-  display: none; }
+  border: none; }
   button.menu-handler:focus {
     border: none;
     outline: none; }
+
+.bar {
+  display: block;
+  border: 3px solid #000000;
+  margin-bottom: 4px;
+  width: 45px; }
 
 .main-menu {
   height: 100%;
@@ -7268,21 +7359,14 @@ button.menu-handler {
             padding: 0 10px; } }
       .main-menu ul li ul {
         background: #579CF9;
-        display: block;
-        position: absolute;
-        top: 70px;
-        padding: 20px;
-        visibility: hidden; }
+        display: none;
+        padding: 20px; }
         .main-menu ul li ul li {
           display: block; }
           .main-menu ul li ul li a {
             color: #f7f7f7; }
             .main-menu ul li ul li a:hover {
               color: #f7f7f7; }
-      .main-menu ul li:hover ul {
-        top: 45px;
-        opacity: 1;
-        visibility: visible; }
   .main-menu.sign-in {
     justify-content: flex-end; }
     .main-menu.sign-in ul li {

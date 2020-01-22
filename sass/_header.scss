@@ -4,4 +4,24 @@
   position: absolute;
   z-index: 100;
   width: 100%;
+
+
+  @media (max-width: 768px) {
+    background: #ffffff;
+    position: fixed;
+    z-index: 999;
+    .mobile-header{
+      position: relative;
+
+      .logo{
+        display: inline-block;
+        max-width: 50%;
+      }
+      button{
+        position: absolute;
+        right:0;
+        top:0;
+      }
+    }
+  }
 }
