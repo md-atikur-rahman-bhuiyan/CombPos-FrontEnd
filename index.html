@@ -12,65 +12,55 @@
 <div id="header-panel" class="header-panel"><!--Start Header-->
   <div class="container-fluid">
       <div class="row">
-          <div class="col-md-2 col-xs-6 mobile-header">
+          <div class="col-xl-2 col-lg-12 mobile-header content-center">
               <a href="#" class="logo">
                   <img src="images/logo.svg" alt="combo POS">
               </a>
-              <button class="navbar-toggler menu-handler d-block d-sm-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-              </button>
-          </div>
-          <div class="col-lg-6 col-md-6 col-xs-6 text-center">
-              <nav class="navbar navbar-expand-md main-menu">
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav mr-auto">
-                          <li class="nav-item active">
-                              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                          </li>
-                          <li class="dropdown">
-                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  FEATURES
-                              </a>
-                              <ul class="dropdown-menu">
-                                  <li><a href="#">FEATURES</a></li>
-                                  <li><a href="#">DEMO</a></li>
-                                  <li><a href="#">PRICING</a></li>
-                                  <li><a href="#">HELP & RESOURCES</a></li>
-                              </ul>
-                          </li>
-                          <li><a href="#">DEMO</a></li>
-                          <li><a href="#">PRICING</a></li>
-                          <li><a href="#">HELP & RESOURCES</a></li>
-                      </ul>
+              <div id="hamburger" class="visible-1200">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
 
-                      <nav class="sign-in main-menu d-block d-sm-none">
+              <div id="menu-mobile" class="visible-1200">
+                  <div id="bg-menu-mobile"></div>
+
+                  <ul>
+                      <li><a href="#">home</a>
                           <ul>
-                              <li><a href="#">SIGN IN</a></li>
-                              <li class="m-active"><a href="#">SIGNUP</a></li>
-                          </ul>
-                      </nav>
-                  </div>
-              </nav>
-<!--             <nav class="main-menu remove">-->
-<!--                 <ul class="menu-inner">-->
-<!--                     <li>-->
-<!--                         <a href="#">FEATURES</a>-->
-<!--                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">-->
-<!--                             <li><a href="#">FEATURES</a></li>-->
-<!--                             <li><a href="#">DEMO</a></li>-->
-<!--                             <li><a href="#">PRICING</a></li>-->
-<!--                             <li><a href="#">HELP & RESOURCES</a></li>-->
-<!--                         </ul>-->
-<!--                     </li>-->
-<!--                     <li><a href="#">DEMO</a></li>-->
-<!--                     <li><a href="#">PRICING</a></li>-->
-<!--                     <li><a href="#">HELP & RESOURCES</a></li>-->
-<!--                 </ul>-->
-<!--             </nav>-->
+                                <li><a href="#">FEATURES</a></li>
+                                <li><a href="#">DEMO</a></li>
+                                <li><a href="#">PRICING</a></li>
+                                <li><a href="#">HELP & RESOURCES</a></li>
+                            </ul>
+                      </li>
+                      <li><a href="#">DEMO</a></li>
+                      <li><a href="#">PRICING</a></li>
+                       <li><a href="#">HELP & RESOURCES</a></li>
+                      <li><a href="#">SIGN IN</a></li>
+                      <li class="m-active"><a href="#">SIGNUP</a></li>
+                  </ul>
+              </div>
           </div>
-          <div class="col-md-4 col-md-3 col-sm-4 col-xs-12 d-none d-sm-block">
+          <div class="col-xl-7 col-lg-12 text-center hidden-1200">
+             <nav class="main-menu">
+                 <ul class="menu-inner">
+                     <li>
+                         <a href="#">FEATURES</a>
+                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                             <li><a href="#">FEATURES</a></li>
+                             <li><a href="#">DEMO</a></li>
+                             <li><a href="#">PRICING</a></li>
+                             <li><a href="#">HELP & RESOURCES</a></li>
+                         </ul>
+                     </li>
+                     <li><a href="#">DEMO</a></li>
+                     <li><a href="#">PRICING</a></li>
+                     <li><a href="#">HELP & RESOURCES</a></li>
+                 </ul>
+             </nav>
+          </div>
+          <div class="col-xl-3 col-lg-12 hidden-1200 sign-in-menu">
               <nav class="sign-in main-menu">
                   <ul>
                       <li><a href="#">SIGN IN</a></li>

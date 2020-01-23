@@ -1,14 +1,106 @@
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) { ... }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) { ... }
+.visible-768{
+  display: none;
+}
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) { ... }
+.hidden-768{
+  display: block;
+}
+.visible-1200{
+  display: none;
+}
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+.hidden-1200{
+  display: block;
+}
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
+
+@media (max-width: 768px) {
+  .visible-768{
+    display: block;
+  }
+
+  .hidden-768{
+    display: none;
+  }
+
+
+
+}
+
+@media (max-width: 1200px) {
+  .visible-1200{
+    display: block;
+  }
+
+  .hidden-1200{
+    display: none;
+  }
+
+  .hero-content{
+    max-width: 40%;
+
+    .main-title{
+      margin-bottom: 10px;
+      line-height: 40px;
+      font-size: 30px;
+    }
+  }
+}
+
+@media (max-width: 1450px) {
+  .main-menu{
+
+    ul{
+      li{
+        a{
+          font-size: 14px;
+        }
+      }
+    }
+    &.sign-in{
+      padding: 0;
+      ul{
+        li{
+          padding: 10px 0;
+
+          a{
+            font-size: 14px;
+          }
+          &.m-active{
+            padding: 10px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .header-panel{
+    .container-fluid{
+      position: relative;
+    }
+    .sign-in-menu{
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+}
+
+//// Medium devices (tablets, 768px and up)
+//@media (min-width: 768px) and (max-width: 1000px) {
+//  .mobile-header{
+//    width: 100%;
+//    .menu-handler{
+//      display: block;
+//    }
+//  }
+//
+//  .mobile-menu{
+//    display: none;
+//    text-align: right;
+//  }
+//}
