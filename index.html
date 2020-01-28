@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">-->
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
@@ -88,19 +89,23 @@
                 </ul>
             </div>
         </div>
-        <div class="hero-icon-light animated-hero-icon"><img src="images/hero/light.png" alt=""></div>
-        <div class="hero-icon-light-2 animated-hero-icon"><img src="images/hero/light-2.png" alt=""></div>
+        <div class="hero-icon-light lightbox animated-hero-icon"><img src="images/hero/light.png" alt=""></div>
+        <div class="hero-icon-light-2 lightbox animated-hero-icon"><img src="images/hero/light-2.png" alt=""></div>
         <div class="hero-icon-mobile animated-hero-icon"><img src="images/hero/mobile.png" alt=""></div>
+        <div class="hero-icon-desk animated-hero-icon hero-mouse-event"><img src="images/hero/desk.png" alt=""></div>
+        <div class="hero-icon-flower animated-hero-icon"><img src="images/hero/flower.png" alt=""></div>
+        <div class="hero-icon-price animated-hero-icon"><img src="images/hero/price.png" alt=""></div>
+        <div class="hero-icon-price-2 animated-hero-icon"><img src="images/hero/price-2.png" alt=""></div>
     </div>
 </div><!--End Hero Section-->
 
-<div id="packages-panel" class="packages-panel"><!--Start Packages panel-->
+<div id="packages-panel" class="packages-panel Scroll"><!--Start Packages panel-->
     <div class="container-fluid">
         <h2 class="title-black">CHOOSE A PLAN THAT'S RIGHT FOR YOU</h2>
         <div class="row packages-panel-bg">
             <div class="col-md-4 col-sm-12 col-12 package-box">
                 <div class="package-boxs">
-                    <div class="package-box-background left-img">
+                    <div class="package-box-background animation-image left-img">
                         <img src="images/pack-img.svg" alt="">
                     </div>
                     <div class="package-box-inner">
@@ -124,7 +129,7 @@
             </div>
             <div class="col-md-4 col-sm-12 col-12 package-box">
                 <div class="package-boxs">
-                    <div class="package-box-background top-right-img text-right">
+                    <div class="package-box-background animation-image top-right-img text-right">
                         <img src="images/pack-img-3.svg" alt="">
                     </div>
                     <div class="package-box-inner">
@@ -146,7 +151,7 @@
                         </div>
 
                     </div>
-                    <div class="package-box-background bottom-left-img">
+                    <div class="package-box-background animation-image bottom-left-img">
                         <img src="images/pack-img-1.svg" alt="">
                     </div>
                 </div>
@@ -154,7 +159,7 @@
             </div>
             <div class="col-md-4 col-sm-12 col-12 package-box">
                 <div class="package-boxs">
-                    <div class="package-box-background bottom-right-img">
+                    <div class="package-box-background animation-image bottom-right-img">
                         <img src="images/pack-img-2.svg" alt="">
                     </div>
                     <div class="package-box-inner">
@@ -181,7 +186,7 @@
     </div>
 </div><!--End Packages panel-->
 
-<div id="features-panel" class="features-panel"><!-- Start Features Panel-->
+<div id="features-panel" class="features-panel Scroll"><!-- Start Features Panel-->
     <div class="container-fluid">
         <div class="panel-title">
             <h2 class="title-black">WHY CHOOSE ComboPOS?</h2>
@@ -189,7 +194,7 @@
         </div>
         <div class="features-post-box">
             <div class="row left-bg">
-                <div class="col-5 left-bg-img">
+                <div class="col-5 animation-image left-bg-img">
                     <img src="images/features-icon.svg" alt="">
 
                 </div>
@@ -211,7 +216,7 @@
 
         <div class="features-post-box">
             <div class="row left-bg">
-                <div class="col-5 left-bg-img bottom-img bg-light-blue">
+                <div class="col-5 left-bg-img animation-image bottom-img bg-light-blue">
                     <img src="images/features-icon-2.svg" alt="">
 
                 </div>
@@ -233,7 +238,7 @@
 
         <div class="features-post-box">
             <div class="row left-bg">
-                <div class="col-5 left-bg-img bottom-img yellow">
+                <div class="col-5 left-bg-img animation-image bottom-img yellow">
                     <img src="images/features-icon-3.svg" alt="">
 
                 </div>
@@ -255,7 +260,7 @@
 
         <div class="features-post-box">
             <div class="row left-bg">
-                <div class="col-5 left-bg-img bottom-img gray">
+                <div class="col-5 left-bg-img animation-image bottom-img gray">
                     <img src="images/features-icon-4.svg" alt="">
 
                 </div>
@@ -277,7 +282,7 @@
 
         <div class="features-post-box">
             <div class="row left-bg">
-                <div class="col-5 left-bg-img bottom-img orange">
+                <div class="col-5 left-bg-img animation-image bottom-img orange">
                     <img src="images/features-icon-5.svg" alt="">
 
                 </div>
@@ -304,10 +309,10 @@
     <section class="footer-sign-up">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-6 content-center text-left">
+                <div class="col-12 col-xl-6 content-center text-left">
                     <h2>Sign up for web hosting today!</h2>
                 </div>
-                <div class="col-12 col-sm-6">
+                <div class="col-12 col-xl-6">
                     <div class="row">
                         <div class="col-6 text-center content-center">
                             <p>Starting at only</p>
@@ -380,7 +385,7 @@
     <section class="footer-copyright">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-6">
+                <div class="col-12 col-md-6">
                     <div class="copyright-menu">
                         <ul>
                             <li><a href="">Global Directory</a></li>
@@ -391,7 +396,7 @@
                     </div>
                     <p class="copyright-text">Copyright 2020 ComboPOS All Rights Reserved.</p>
                 </div>
-                <div class="col-6 content-center">
+                <div class="col-12 col-md-6 content-center">
                     <div class="footer-social">
                         <ul>
                             <li><a href=""><i class="fa fa-facebook-f"></i></a></li>
@@ -411,9 +416,10 @@
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/gsap.min.js"></script>
-<script src="js/ScrollToPlugin.min.js"></script>
+<script src="js/ScrollMagic.min.js"></script>
+<script src="js/animation.gsap.min.js"></script>
+<script src="js/debug.addIndicators.min.js"></script>
 <script src="js/custom.js"></script>
-
 
 </body>
 </html>

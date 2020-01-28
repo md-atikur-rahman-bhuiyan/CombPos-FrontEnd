@@ -10,6 +10,10 @@
         color: #ffffff;
         font-family: 'montserratregular';
         line-height: 35px;
+        @media (max-width: 768px){
+          font-size: 20px;
+          text-align: center;
+        }
       }
 
       button{
@@ -21,6 +25,10 @@
         padding: 18px 60px;
         box-shadow: none;
         border: 1px solid #707070;
+        @media (max-width: 768px){
+          padding: 10px 0;
+          font-size: 16px;
+        }
       }
     }
 
@@ -29,6 +37,10 @@
       background-repeat: no-repeat;
       background-position: bottom right;
       padding: 80px 0;
+
+      @media (max-width: 768px){
+        padding: 40px;
+      }
 
       .footer-menu{
         h4{
@@ -44,20 +56,35 @@
       background: #086BEF;
       padding: 28px 0;
 
-      ul{
-        li{
-          display: inline-block;
-          padding-right: 14px;
-          margin-right: 14px;
-          border-right: 1px solid #ffffff;
+      .copyright-menu{
+        ul{
+          li{
+            display: inline-block;
+            padding-right: 14px;
+            margin-right: 14px;
+            border-right: 1px solid #ffffff;
 
-          &:last-child{
-            border-right: none;
-            margin-right: 0;
-            padding-right: 0;
+            &:last-child{
+              border-right: none;
+              margin-right: 0;
+              padding-right: 0;
+            }
+          }
+
+          @media (max-width: 768px){
+            text-align: center;
+            li{
+              padding-right: 5px;
+              margin-right: 5px;
+              border-right: none;
+              a{
+                font-size: 14px;
+              }
+            }
           }
         }
       }
+
 
       .footer-social{
         text-align: right;
@@ -65,6 +92,9 @@
           margin-bottom: 0;
           li{
             border:none;
+            display: inline-block;
+            padding-right: 14px;
+            margin-right: 14px;
 
             a{
               font-size: 28px;
@@ -73,7 +103,19 @@
               margin-right: 0;
               padding-right: 0;
             }
+
+            @media (max-width: 768px){
+                padding-right: 0;
+                margin-right: 5px;
+            }
           }
+
+          @media (max-width: 768px){
+           text-align: center;
+          }
+        }
+        @media (max-width: 768px){
+          text-align: center;
         }
       }
 
@@ -94,6 +136,14 @@
     p{
       color: #ffffff;
       margin-bottom: 5px;
+
+
+      &.copyright-text{
+        @media (max-width: 768px){
+          text-align: center;
+          margin-bottom: 20px;
+        }
+      }
     }
 
 

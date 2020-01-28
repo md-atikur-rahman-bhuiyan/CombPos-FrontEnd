@@ -3,8 +3,74 @@
 jQuery(document).ready(function(){
     gsap.to(".hero-icon-light", {duration: 2, y: 200});
     gsap.to(".hero-icon-light-2", {duration: 5, y: 300});
-    gsap.to("#packages-panel", {duration: 2, scrollTo: {y: 400, x: 200}, ease: "power2"});
-    gsap.to(".mobile-menu", {duration: 2, y:100});
+    // gsap.to("#packages-panel", {duration: 2, y:10});
+    gsap.to(".hero-icon-mobile", {duration: 5, y:-50});
+    gsap.to(".hero-icon-desk", {duration: 5, x:50});
+    gsap.to(".hero-icon-flower", {duration: 5, y:-50});
+    gsap.to(".hero-icon-price", {duration: 2, y:-30});
+    gsap.to(".hero-icon-price-2", {duration: 2, y:-30});
+
+    // Scroll Magic
+    let controller = new ScrollMagic.Controller();
+    let tween = TweenMax.fromTo("#packages-panel", 0.2, {ease: "power1.out", y:100, opacity:0}, {ease: "power1.out", y:-100, opacity:1});
+
+    let ourScene = new ScrollMagic.Scene({
+        triggerElement: "#packages-panel",
+        duration: '100%',
+    })
+    ourScene.setClassToggle("#packages-panel", 'animClass')
+    ourScene.addIndicators()
+    ourScene.removeIndicators()
+    ourScene.setTween(tween)
+    ourScene.addTo(controller);
+
+    $(".animation-image").each(function () {
+            let animiImg = $(this).find("img");
+            // // let animiBox = $(this).find(".features-box-inner");
+            // let animiBoxTitle = $(this).find("h2");
+            // let animiBoxContent = $(this).find("p");
+
+        let AnimationCls = new TimelineMax();
+        AnimationCls
+            .fromTo(animiImg, 2, {ease: "power4.out",opacity:.5, scale:.5}, {ease: "power4.out",scale:1, opacity: 1},"-=2.7")
+            // .from(animiBox, 1, {autoAlpha: 0, y:100, ease: "power4.easeOut"}, "-=.3")
+            // .from(animiBoxTitle, .5, { autoAlpha: 0, y:30, ease: "power4.easeOut"} )
+            // .from(animiBoxContent, .5, { autoAlpha: 0, y:30, ease: "power4.easeOut"})
+            // .fromTo(this, 1, {ease: "back.out(1.7)", opacity:0, y:-500}, {ease: "back.out(1.7)", opacity:1, y:0} )
+
+        let ourScene2 = new ScrollMagic.Scene({
+            triggerElement: this,
+            duration: '150%',
+        })
+        ourScene2.addIndicators()
+        ourScene2.removeIndicators()
+        ourScene2.setTween(AnimationCls)
+        ourScene2.addTo(controller);
+    });
+});
+
+$("#hero-section").mousemove(function(event){
+    var xPos = (event.clientX/$(window).width())-0.5,
+        yPos = (event.clientY/$(window).height())-0.5,
+        box = $('.hero-mouse-event'),
+        mobile = $('.hero-icon-mobile')
+
+    TweenLite.to(box, 0.6, {
+        rotationY: 10 * xPos,
+        rotationX: 10 * yPos,
+        ease: Power1.easeOut,
+        transformPerspective: 900,
+        transformOrigin: 'center'
+    });
+
+    TweenLite.to(mobile, 0.6, {
+        ease: Power1.easeOut,
+        // rotation:"1.25rad",
+        rotationY: 15 * xPos,
+        rotationX: 15 * yPos,
+        transformPerspective: 900,
+        transformOrigin: 'center'
+    });
 
 });
 
@@ -12,7 +78,6 @@ jQuery(document).ready(function(){
 $(document).ready(function () {
     var estado = 0,
         vw = $(window).width();
-
 
 
     $("#hamburger").click(function() {
